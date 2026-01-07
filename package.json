@@ -2,6 +2,44 @@
   "name": "analytics-challenge",
   "version": "0.1.0",
   "private": true,
+  "overrides": {
+    "@visx/axis": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    },
+    "@visx/curve": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    },
+    "@visx/event": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    },
+    "@visx/grid": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    },
+    "@visx/group": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    },
+    "@visx/responsive": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    },
+    "@visx/scale": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    },
+    "@visx/shape": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    },
+    "@visx/tooltip": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    }
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
