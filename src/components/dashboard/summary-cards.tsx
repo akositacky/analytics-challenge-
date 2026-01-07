@@ -38,7 +38,7 @@ const cardVariants = {
     y: 0,
     scale: 1,
     transition: {
-      type: 'spring',
+      type: 'spring' as const,
       stiffness: 100,
       damping: 15,
     },
@@ -91,7 +91,7 @@ function AnimatedCard({ title, icon, value, subtitle, valueClassName }: Animated
           className={`text-2xl font-bold ${valueClassName || ''}`}
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.2, type: 'spring', stiffness: 200 }}
+          transition={{ delay: 0.2, type: 'spring' as const, stiffness: 200 }}
         >
           {value}
         </motion.div>

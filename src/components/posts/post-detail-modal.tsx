@@ -59,7 +59,7 @@ const itemVariants = {
     opacity: 1, 
     y: 0,
     transition: {
-      type: 'spring',
+      type: 'spring' as const,
       stiffness: 100,
       damping: 12,
     },
@@ -72,7 +72,7 @@ const metricCardVariants = {
     opacity: 1, 
     scale: 1,
     transition: {
-      type: 'spring',
+      type: 'spring' as const,
       stiffness: 150,
       damping: 15,
     },
@@ -104,7 +104,7 @@ function MetricCard({
       <motion.div
         initial={{ rotate: -180, opacity: 0 }}
         animate={{ rotate: 0, opacity: 1 }}
-        transition={{ delay: index * 0.1, type: 'spring', stiffness: 200 }}
+        transition={{ delay: index * 0.1, type: 'spring' as const, stiffness: 200 }}
       >
         <Icon className="h-5 w-5 text-muted-foreground" />
       </motion.div>
@@ -146,7 +146,7 @@ function PlatformBadge({ platform }: { platform: string }) {
         className="inline-flex items-center gap-1 px-2 py-1 text-xs font-medium rounded-full bg-pink-100 text-pink-700 dark:bg-pink-900/30 dark:text-pink-400"
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+        transition={{ type: 'spring' as const, stiffness: 300, damping: 20 }}
       >
         <Instagram className="h-3 w-3" />
         Instagram
@@ -158,7 +158,7 @@ function PlatformBadge({ platform }: { platform: string }) {
       className="inline-flex items-center gap-1 px-2 py-1 text-xs font-medium rounded-full bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300"
       initial={{ opacity: 0, scale: 0 }}
       animate={{ opacity: 1, scale: 1 }}
-      transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+      transition={{ type: 'spring' as const, stiffness: 300, damping: 20 }}
     >
       <Video className="h-3 w-3" />
       TikTok
@@ -293,7 +293,7 @@ export function PostDetailModal() {
                       className="text-2xl font-bold text-primary"
                       initial={{ opacity: 0, scale: 0 }}
                       animate={{ opacity: 1, scale: 1 }}
-                      transition={{ delay: 0.5, type: 'spring', stiffness: 200 }}
+                      transition={{ delay: 0.5, type: 'spring' as const, stiffness: 200 }}
                     >
                       {post.engagement_rate}%
                     </motion.span>

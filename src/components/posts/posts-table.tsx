@@ -103,7 +103,7 @@ function EmptyTable() {
     <MotionCard
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ type: 'spring', stiffness: 100, damping: 15 }}
+      transition={{ type: 'spring' as const, stiffness: 100, damping: 15 }}
     >
       <CardHeader>
         <CardTitle>Posts</CardTitle>
