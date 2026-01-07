@@ -2,44 +2,6 @@
   "name": "analytics-challenge",
   "version": "0.1.0",
   "private": true,
-  "overrides": {
-    "@visx/axis": {
-      "react": "$react",
-      "react-dom": "$react-dom"
-    },
-    "@visx/curve": {
-      "react": "$react",
-      "react-dom": "$react-dom"
-    },
-    "@visx/event": {
-      "react": "$react",
-      "react-dom": "$react-dom"
-    },
-    "@visx/grid": {
-      "react": "$react",
-      "react-dom": "$react-dom"
-    },
-    "@visx/group": {
-      "react": "$react",
-      "react-dom": "$react-dom"
-    },
-    "@visx/responsive": {
-      "react": "$react",
-      "react-dom": "$react-dom"
-    },
-    "@visx/scale": {
-      "react": "$react",
-      "react-dom": "$react-dom"
-    },
-    "@visx/shape": {
-      "react": "$react",
-      "react-dom": "$react-dom"
-    },
-    "@visx/tooltip": {
-      "react": "$react",
-      "react-dom": "$react-dom"
-    }
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -70,9 +32,9 @@
     "clsx": "^2.1.1",
     "framer-motion": "^12.24.10",
     "lucide-react": "^0.562.0",
-    "next": "16.1.1",
-    "react": "19.2.3",
-    "react-dom": "19.2.3",
+    "next": "15.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "recharts": "^3.6.0",
     "tailwind-merge": "^3.4.0",
     "zustand": "^5.0.9"
@@ -84,10 +46,10 @@
     "@testing-library/react": "^16.3.1",
     "@types/jest": "^30.0.0",
     "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
     "eslint": "^9",
-    "eslint-config-next": "16.1.1",
+    "eslint-config-next": "15.1.0",
     "jest": "^30.2.0",
     "jest-environment-jsdom": "^30.2.0",
     "tailwindcss": "^4",
