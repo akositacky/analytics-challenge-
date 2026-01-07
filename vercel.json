@@ -1,4 +1,4 @@
 {
-  "installCommand": "yarn install",
+  "installCommand": "npm install",
   "framework": "nextjs"
 }
