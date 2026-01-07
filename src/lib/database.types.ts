@@ -114,7 +114,22 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      get_user_summary: {
+        Args: {
+          user_uuid: string
+        }
+        Returns: {
+          total_engagement: number
+          average_engagement_rate: number
+          posts_count: number
+          top_post_id: string | null
+          top_post_caption: string | null
+          top_post_engagement: number
+          top_post_platform: string | null
+          trend_percentage: number
+          trend_direction: string
+        }[]
+      }
     }
     Enums: {
       [_ in never]: never
