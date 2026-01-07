@@ -223,9 +223,10 @@ export function PostDetailModal() {
                 transition={{ duration: 0.3 }}
               >
                 {post.thumbnail_url ? (
+                  // eslint-disable-next-line jsx-a11y/alt-text
                   <motion.img
                     src={post.thumbnail_url}
-                    alt=""
+                    alt="Post thumbnail"
                     className="w-full h-full object-cover"
                     initial={{ scale: 1.1, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}

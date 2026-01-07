@@ -175,10 +175,10 @@ export function PostsTable() {
         cell: ({ row }) => (
           <div className="relative w-12 h-12 rounded overflow-hidden bg-gray-100 dark:bg-gray-800 flex-shrink-0">
             {row.original.thumbnail_url ? (
-              // eslint-disable-next-line @next/next/no-img-element
+              // eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text
               <img
                 src={row.original.thumbnail_url}
-                alt=""
+                alt="Post thumbnail"
                 className="w-full h-full object-cover"
               />
             ) : (
