@@ -18,7 +18,32 @@ A full-stack analytics dashboard built with Next.js 15, TypeScript, Supabase, an
 | Testing | Jest |
 | Icons | Lucide React |
 
-## Setup Instructions
+## 🚀 Quick Start (For Reviewers)
+
+### Live Demo
+**URL:** [Your Vercel URL here]
+
+### Test Credentials
+
+| User | Email | Password | Data |
+|------|-------|----------|------|
+| User A | `usera@test.com` | `password123` | 15 posts, 30 days metrics |
+| User B | `userb@test.com` | `password123` | 15 posts, 30 days metrics |
+
+> **Note:** Each user can only see their own data (RLS enforced). Try logging in with both accounts to verify data isolation.
+
+### What to Test
+1. **Login** with User A credentials
+2. **Dashboard** - View summary cards, engagement chart, posts table
+3. **Filtering** - Filter posts by platform (Instagram/TikTok)
+4. **Sorting** - Click column headers to sort
+5. **Post Details** - Click any row to open detail modal
+6. **Chart Toggle** - Switch between line and area chart views
+7. **Logout & Login** as User B to confirm data isolation
+
+---
+
+## Setup Instructions (Local Development)
 
 ### Prerequisites
 
@@ -29,12 +54,10 @@ A full-stack analytics dashboard built with Next.js 15, TypeScript, Supabase, an
 ### 1. Clone and Install Dependencies
 
 ```bash
-git clone <repository-url>
-cd analytics-challenge
-npm install --legacy-peer-deps
+git clone https://github.com/akositacky/analytics-challenge-.git
+cd analytics-challenge-
+npm install
 ```
-
-> Note: `--legacy-peer-deps` is required due to Visx peer dependency requirements with React 19.
 
 ### 2. Set Up Supabase
 
