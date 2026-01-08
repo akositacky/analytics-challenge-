@@ -32,15 +32,6 @@ A full-stack analytics dashboard built with Next.js 15, TypeScript, Supabase, an
 
 > **Note:** Each user can only see their own data (RLS enforced). Try logging in with both accounts to verify data isolation.
 
-### What to Test
-1. **Login** with User A credentials
-2. **Dashboard** - View summary cards, engagement chart, posts table
-3. **Filtering** - Filter posts by platform (Instagram/TikTok)
-4. **Sorting** - Click column headers to sort
-5. **Post Details** - Click any row to open detail modal
-6. **Chart Toggle** - Switch between line and area chart views
-7. **Logout & Login** as User B to confirm data isolation
-
 ---
 
 ## Setup Instructions (Local Development)
